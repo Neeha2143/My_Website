@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home | My website</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <style>
+    body {
+      background-image: url("../img/image41.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body id="Home-body">
+  <div class="nav-options" id="NavDiv">
+    <a class="nav-menu" href="./index.html"   onmouseover="NavHover(this)" onmouseout="NavOut(this)">Home</a>
+    <a class="nav-menu" href="./about.html"   onmouseover="NavHover(this)" onmouseout="NavOut(this)">About Me</a>
+    <a class="nav-menu" href="./text.html"    onmouseover="NavHover(this)" onmouseout="NavOut(this)">Activity</a>
+    <a class="nav-menu" href="./skills.html"  onmouseover="NavHover(this)" onmouseout="NavOut(this)">Skills</a>
+    <a class="nav-menu" href="./contact.html" onmouseover="NavHover(this)" onmouseout="NavOut(this)">Connect</a>
+  </div>
+  <br/><br/><br/><br/><br/><br/>
+  <h1 class="main-heading">Hey, there. I am Neeharika</h1>
+  <br/>
+  <h1 class="main-heading">Welcome to my website!!</h1>
+  
+  <section id="home">
+    <div>
+      <div class="slideshow">
+      
+      <div class="pics">
+        <img src="../img/image01.jpg" alt="Nature images">
+      </div>
+      
+      <div class="pics">
+        <img src="../img/image02.jpg" alt="Nature images">
+      </div>
+      
+      <div class="pics">
+        <img src="../img/image03.jpg" alt="Nature images">
+      </div>
+
+      <div class="pics">
+        <img src="../img/image04.jpg" alt="Nature images">
+      </div>
+
+      <div class="pics">
+        <img src="../img/image05.jpg" alt="Nature images">
+      </div>
+      
+      <a class="prev" onclick="Decrement()">&#10094;</a>
+      <a class="next" onclick="Increment()">&#10095;</a>    
+      </div>
+    </div>
+
+    <h1 class="long-heading">How skilled am I? Type your opinion here &#128578;</h1>
+
+    <div id="Form">
+        <p class="field">Name</p>
+        <p><input type="text" id="name"></p>
+
+        <p class="field">Skill</p>
+        <p><input type="text" id="skill"></p>
+
+        <p class="field">Proficiency</p>
+        <p><select id="level" name="Proficiency">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="expert">Expert</option>
+        </select></p>
+
+        <p><input type="button" id="FormButton" value="Submit" onclick="AppendRow()" onmouseover="ButtonHover(this)" onmouseout="ButtonOut(this)"></p>
+    </div>
+      <br/>
+    <table id="FormTable">
+        <tr>
+            <th>Name</th>
+            <th>Skill</th>
+            <th>Proficiency</th>
+        </tr>
+    </table>
+    <br/><br/>
+    <br/>
+
+  </section>
+
+  <footer id="end">
+    <a class="links" id="left"   href="https://www.facebook.com/"  target="_blank" onmouseover="NavHover(this)" onmouseout="NavOut(this)">Facebook</a>
+    <a class="links" id="center" href="https://www.wikipedia.org/" target="_blank" onmouseover="NavHover(this)" onmouseout="NavOut(this)">Wikipedia</a>
+    <a class="links" id="right"  href="https://www.youtube.com/"   target="_blank" onmouseover="NavHover(this)" onmouseout="NavOut(this)">YouTube</a>
+  </footer>
+
+  <script>
+    var index = 0;
+    Display();
+  </script>
+  <script>
+    function StickyNav()
+    {
+        navDiv.classList.add("stickyNav");
+    }
+    
+    var navDiv = document.getElementById("NavDiv");
+    window.onscroll = function() {StickyNav();}
+  </script>
+</body>
+
+</html>

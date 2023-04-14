@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About Me</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <style>
+    body {
+      background-image: url("../img/aboutbak.jpg");
+      background-size: cover;
+    }
+
+    img {
+      opacity: 0.1;
+    }
+  </style>
+</head>
+
+<body id="Home-body">
+  <div class="nav-options" id="NavDiv">
+    <a class="nav-menu" href="./index.html"   onmouseover="NavHover(this)" onmouseout="NavOut(this)">Home</a>
+    <a class="nav-menu" href="./about.html"   onmouseover="NavHover(this)" onmouseout="NavOut(this)">About Me</a>
+    <a class="nav-menu" href="./text.html"    onmouseover="NavHover(this)" onmouseout="NavOut(this)">Activity</a>
+    <a class="nav-menu" href="./skills.html"  onmouseover="NavHover(this)" onmouseout="NavOut(this)">Skills</a>
+    <a class="nav-menu" href="./contact.html" onmouseover="NavHover(this)" onmouseout="NavOut(this)">Connect</a>
+  </div>
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  <section id="about">
+    <img id="my-pic" src="../img/image05.jpg" alt="photo of Neeharika"/>
+    <div class="AboutMe">
+    <pre class="AboutTxt">
+      Hey, I’m Neeharika, a 3rd year Mechanical student from NIT-Warangal. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+      make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially 
+      unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+      publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+      scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+      essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+      with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+      the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+      centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+      of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+    </pre>
+    </div>
+  </section>
+
+  <footer id="end">
+    <a class="links" id="left"   href="https://www.facebook.com/"  target="_blank" onmouseover="NavHover(this)" onmouseout="NavOut(this)">Facebook</a>
+    <a class="links" id="center" href="https://www.wikipedia.org/" target="_blank" onmouseover="NavHover(this)" onmouseout="NavOut(this)">Wikipedia</a>
+    <a class="links" id="right"  href="https://www.youtube.com/"   target="_blank" onmouseover="NavHover(this)" onmouseout="NavOut(this)">YouTube</a>
+  </footer>
+
+  <script>
+    function StickyNav()
+    {
+        navDiv.classList.add("stickyNav");
+    }
+    
+    var navDiv = document.getElementById("NavDiv");
+    window.onscroll = function() {StickyNav();}
+  </script>
+</body>
+
+</html>

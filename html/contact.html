@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Connect</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <style>
+    body {
+      background-image: url("../img/image1.jpg");
+    }
+  </style>
+</head>
+
+<body id="contact">
+  <div class="nav-options" id="NavDiv">
+    <a class="nav-menu" href="./index.html"   onmouseover="NavHover(this)" onmouseout="NavOut(this)">Home</a>
+    <a class="nav-menu" href="./about.html"   onmouseover="NavHover(this)" onmouseout="NavOut(this)">About Me</a>
+    <a class="nav-menu" href="./text.html"    onmouseover="NavHover(this)" onmouseout="NavOut(this)">Activity</a>
+    <a class="nav-menu" href="./skills.html"  onmouseover="NavHover(this)" onmouseout="NavOut(this)">Skills</a>
+    <a class="nav-menu" href="./contact.html" onmouseover="NavHover(this)" onmouseout="NavOut(this)">Connect</a>
+  </div>
+  
+  <section id="connect">
+    <br/><br/><br/>
+    <h1 class="CoTitle">Follow me on GitHub</h1>
+    <a href="https://github.com/Neeha2143"><img class="logos" onmouseover="LinkHover(this)" onmouseout="LinkOut(this)" src="../img/GitHub-Mark-Light-120px-plus.png"></a>
+    <h1 class="CoTitle">Be my Facebook Friend</h1>
+    <a href="https://www.facebook.com/profile.php?id=100075803294729"><img class="logos" onmouseover="LinkHover(this)" onmouseout="LinkOut(this)" src="../img/facebook.png"></a>
+    <h1 class="CoTitle">Connect with me on LinkedIn</h1>
+    <a href="https://www.linkedin.com/in/neeharika-paturu-019a58237/"><img class="logos" onmouseover="LinkHover(this)" onmouseout="LinkOut(this)" src="../img/linkedin.png"></a>
+    <br/>
+  </section>
+
+  <footer id="end">
+    <a class="links" id="left"   href="https://www.facebook.com/"  target="_blank" onmouseover="NavHover(this)" onmouseout="NavOut(this)">Facebook</a>
+    <a class="links" id="center" href="https://www.wikipedia.org/" target="_blank" onmouseover="NavHover(this)" onmouseout="NavOut(this)">Wikipedia</a>
+    <a class="links" id="right"  href="https://www.youtube.com/"   target="_blank" onmouseover="NavHover(this)" onmouseout="NavOut(this)">YouTube</a>
+  </footer>
+
+  <script>
+    function StickyNav()
+    {
+        navDiv.classList.add("stickyNav");
+    }
+    
+    var navDiv = document.getElementById("NavDiv");
+
+    window.onscroll = function() {StickyNav();}
+  </script>
+  </body>
+  
+</html>
